@@ -1,0 +1,9 @@
+.vscode
+.DS_Store
+.env
+node_modules
+tests/generated-artifacts
+flattens
+package-lock.json
+yarn.lock
+*.log

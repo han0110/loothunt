@@ -1,0 +1,42 @@
+{
+  "name": "loothunt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/han0110/loothunt",
+  "author": "han0110 <tinghan0110@gmail.com>",
+  "contributors": [
+    "Xavier Lupin <xavierlupin0418@gmail.com>"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "lint": "solhint contracts/**/*.sol",
+    "compile": "truffle compile",
+    "test": "bash scripts/test.sh",
+    "flatten": "truffle-flattener"
+  },
+  "dependencies": {
+    "@0x/contracts-interfaces": "^1.0.6",
+    "@0x/contracts-libs": "^1.0.6",
+    "@0x/contracts-protocol": "^2.2.3",
+    "@0x/contracts-tokens": "^1.0.6",
+    "@0x/contracts-utils": "^1.0.6",
+    "bip39": "^2.5.0",
+    "dotenv": "^6.2.0",
+    "eth-sig-util": "^2.1.1",
+    "ethereumjs-wallet": "^0.6.3",
+    "truffle": "^5.0.2",
+    "truffle-flattener": "^1.2.11",
+    "web3": "1.0.0-beta.37"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-import": "^2.15.0",
+    "eslint-plugin-jest": "^22.2.1",
+    "ganache-cli": "6.2.5",
+    "jest": "^24.0.0",
+    "jest-watch-typeahead": "^0.2.1",
+    "solhint": "^2.0.0-alpha.3"
+  }
+}
