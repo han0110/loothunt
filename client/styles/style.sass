@@ -1,0 +1,65 @@
+// reset
+@import '~normalize.css/normalize.css'
+
+// partials
+@import 'partials/base'
+
+// vars
+@import 'mixins/base'
+@import 'vars/base'
+
+@import url('//fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Montserrat:400,400i,800,800i')
+
+html,
+body
+  height: 100%
+  overflow-x: hidden
+  overflow-y: auto
+
+body
+  font-family: $font-family
+  font-weight: $font-weight
+  line-height: $line-height
+  letter-spacing: .05em
+  box-sizing: border-box
+
+  background-color: $site-background-color
+  color: $text-color
+
+  // Font render setting
+  -moz-osx-font-smoothing: grayscale
+  -webkit-font-smoothing: antialiased
+
+*, *:before, *:after
+  box-sizing: inherit
+
+ul
+  list-style-type: none
+  margin: 0
+  padding: 0
+
+dl
+  margin: 0
+
+dd, dt
+  padding: 0
+  margin: 0
+
+a, a:visited
+  text-decoration: none
+  color: inherit
+
+  &:hover, &:focus
+
+  &:active
+
+  &:link
+    -webkit-tap-highlight-color: $tap-highlight-color
+
+input, textarea
+  border: none
+  outline: none
+
+\:global(#__next)
+  min-height: 100vh
+  +flex(column, stretch, flex-start)

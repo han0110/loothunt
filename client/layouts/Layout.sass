@@ -1,0 +1,28 @@
+@import '../styles/mixins/base'
+@import '../styles/vars/base'
+
+.main-container
+  overflow-x: hidden
+  +flex(column, stretch)
+
+.main-container,
+header,
+  h1, h2, h3, h4, h5, h6
+    padding: .25em 0
+    margin: .5em 0
+    display: inline-block
+
+  h1, h2
+    font-family: $font-title
+    font-weight: $font-weight-bold
+    line-height: $line-height * 0.8
+
+  h1
+    font-size: 4em
+    max-width: 8em
+
+  h2
+    font-size: 2em
+
+  h4
+    font-size: 1.1em

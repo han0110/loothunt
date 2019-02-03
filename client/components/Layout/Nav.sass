@@ -1,0 +1,44 @@
+@import '../../styles/mixins/base'
+@import '../../styles/vars/base'
+
+.container
+  +flex(row, center, space-between)
+  position: fixed
+  padding: 0 1em
+  z-index: 500
+  top: 0
+  left: 0
+  right: 0
+  background-color: rgba(darken($site-background-color, 2), .96)
+  color: $text-light
+
+$logo-height: 5em
+
+.logo
+  display: flex
+  height: $logo-height
+  width: $logo-height / 357 * 1024
+  margin: .5em 1.25vw
+
+.items
+  +flex(row, stretch)
+
+  .item
+    padding: 1em 1.25vw
+    font-size: 1.1em
+    +flex(row)
+    color: darken($text-light, 20)
+
+    &.wallet
+      background-color: darken($site-background-color, 5)
+      padding: 1em 2.5vw
+      margin-left: 1.25vw
+
+      &:hover
+        background-color: darken($site-background-color, 10)
+
+    &:hover
+      color: white
+
+.dummy
+  padding: ($logo-height + 1em) / 2 0

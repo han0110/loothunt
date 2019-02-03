@@ -7,3 +7,5 @@ flattens
 package-lock.json
 yarn.lock
 *.log
+.next
+build

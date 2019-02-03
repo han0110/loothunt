@@ -1,0 +1,71 @@
+@import '../../styles/mixins/base'
+@import '../../styles/vars/base'
+
+.container
+  +flex(column)
+  position: relative
+  border-radius: 1em
+  background-color: white
+  width: 7em
+  height: 9em
+
+.status
+  +flex()
+  position: absolute
+  top: 0.5em
+  left: 0.5em
+  width: 1em
+  height: 1em
+
+.spinner
+  +spinner(1em)
+  border: solid 2px
+  border-color: $color-violet-blue $color-violet-blue transparent transparent
+
+.checkmark
+  display: inline-block
+  
+  &:after
+    content: ''
+    display: block
+    width: 0.5em
+    height: 0.8em
+    border: solid $color-violet-blue
+    border-width: 0 2px 2px 0
+    transform: rotate(45deg)
+
+.crossmark
+  +flex()
+  
+  &:before,
+  &:after
+    content: ''
+    width: 0.2em
+    height: 1em
+    background: $color-royal-fuchsia
+
+  &:before
+    margin-right: -1.5px
+    transform: rotate(45deg)
+  &:after
+    margin-left: -1.5px
+    transform: rotate(135deg)
+
+.image
+  +flex()
+  width: 6em
+  height: 6em
+  flex-shrink: 0
+
+  > img
+    width: 100%
+    height: 100%
+
+    &[data-erc20]
+      width: 70%
+      height: 70%
+
+.content
+  margin: 0
+  font-weight: bolder
+  color: $color-violet-blue

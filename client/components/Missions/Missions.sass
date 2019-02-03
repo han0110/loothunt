@@ -1,0 +1,39 @@
+@import '../../styles/mixins/base'
+@import '../../styles/vars/base'
+
+.container
+  padding: 3em 20vw
+
+.title
+  color: $text-light;
+
+.mission
+  +flex(row, stretch, flex-start)
+  padding: 1em
+
+.requirements
+  +flex(row, stretch, flex-start)
+
+  > div
+    margin-left: 1em
+
+.divider
+  margin: 0 2em 0 auto
+  padding-left: 2em
+  border-right: dashed 1px $text-light
+
+.reward
+  margin-right: 2em
+
+.get
+  +flex(column)
+  height: 5em
+  padding: .5em 1em
+  margin: auto 0;
+  font-weight: bold
+  color: $text-light
+  background-color: transparent
+  border: none
+  outline: none
+  transition: .24s ease-out
+  cursor: pointer
