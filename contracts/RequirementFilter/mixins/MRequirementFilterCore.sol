@@ -6,7 +6,8 @@ import "../interfaces/IRequirementFilterCore.sol";
 contract MRequirementFilterCore is
     IRequirementFilterCore
 {
-    mapping(bytes32 => mapping(address => uint256)) internal filledTimes;
+    // Mapping of orderHash => (takerAddress => times of the order filled by taker)
+    mapping(bytes32 => mapping(address => uint256)) public filledTimes;
 
     /// @dev Validates signerAddress's filling times is in limitation. Succeeds or throws.
     /// @param takerAssetData TakerAssetData extracted from signedExchangeTransaction.
