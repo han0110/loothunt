@@ -4,17 +4,20 @@
   "main": "index.js",
   "repository": "https://github.com/han0110/loothunt",
   "contributors": [
-    "han0110 <tinghan0110@gmail.com>",
-    "Xavier Lupin <xavierlupin0418@gmail.com>"
+    "Han Jian <tinghan0110@gmail.com>",
+    "Xavier Lupin <xavierlupin0418@gmail.com>",
+    "David Tseng <earlysleepers@gmail.com>",
+    "Justine Lu <justine0930@gmail.com>"
   ],
   "license": "MIT",
   "scripts": {
     "dev": "next client",
     "export": "next build client && next export client -o build",
     "deploy": "gh-pages -d build -b gh-pages -t -m \":rocket: Deploy\"",
-    "lint:contract": "solhint contracts/**/*.sol",
     "compile": "truffle compile",
-    "test": "bash scripts/test.sh",
+    "lint:js": "eslint client",
+    "lint:contract": "solhint contracts/**/*.sol",
+    "test:contract": "bash scripts/test.sh",
     "flatten": "truffle-flattener"
   },
   "dependencies": {
