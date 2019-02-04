@@ -2,10 +2,10 @@
 @import '../../styles/vars/base'
 
 .container
-  padding: 3em 20vw
+  padding: 2em 20vw
 
 .title
-  color: $text-light;
+  color: $text-light
 
 .mission
   +flex(row, stretch, flex-start)
@@ -13,9 +13,11 @@
 
 .requirements
   +flex(row, stretch, flex-start)
+  overflow: scroll
 
   > div
     margin-left: 1em
+    flex-shrink: 0
 
 .divider
   margin: 0 2em 0 auto
@@ -24,16 +26,52 @@
 
 .reward
   margin-right: 2em
+  flex-shrink: 0
 
 .get
   +flex(column)
-  height: 5em
-  padding: .5em 1em
-  margin: auto 0;
+  width: 5em
+  height: 3em
+  padding: .5em
+  margin: auto 0
   font-weight: bold
   color: $text-light
-  background-color: transparent
+  background-color: darken($color-royal-fuchsia, 10)
+  border-radius: 0.5em
   border: none
   outline: none
   transition: .24s ease-out
+  cursor: not-allowed
+
+  > h4, p
+    margin: 0
+  
+  > p
+    font-size: 0.75em
+    color: darken($text-light, 20)
+
+  &[data-active="true"]
+    cursor: pointer
+
+    &:hover
+      transform: scale(1.1)
+
+
+.viewTx
+  +flex(column)
+  width: 5em
+  flex-shrink: 0
+  height: 3em
+  padding: .5em
+  margin: auto 0
+  font-weight: bold
+  background-color: lighten($color-violet-blue, 10)
+  border-radius: 0.5em
+  transition: .24s ease-out
   cursor: pointer
+
+  &:hover
+    transform: scale(1.1)
+
+  > h5
+    color: $text-light

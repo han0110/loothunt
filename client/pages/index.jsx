@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { hexToNumber } from 'web3-utils'
 // Layouts
 import Layout from '../layouts/Layout'
 // Components
@@ -30,12 +31,18 @@ class IndexPage extends Component {
       this.setState({ missions: newMissions })
 
       for (let i = 0, l = missions.length; i < l; i += 1) {
-        eth.getRequirementAchieved(missions[i].order, props.selectedAddress)
-          .then(requirementAchieved => {
-            newMissions[i].fetching = false
-            newMissions[i].requirementAchieved = requirementAchieved
-            this.setState({ missions: newMissions })
-          })
+        Promise.all([
+          eth.getRequirementAchieved(missions[i].order, props.selectedAddress),
+          eth.getFilled(missions[i].orderHash),
+        ]).then(([requirementAchieved, filled]) => {
+          newMissions[i].fetching = false
+          newMissions[i].requirementAchieved = requirementAchieved
+          newMissions[i].filled = filled
+          newMissions[i].active =
+            !requirementAchieved.includes(false) && 
+            filled < hexToNumber(missions[i].order.takerAssetAmount)
+          this.setState({ missions: newMissions })
+        })
       }
     }
   }
@@ -44,19 +51,21 @@ class IndexPage extends Component {
     const { missions } = this.state
     const newMissions = missions
 
-    try {
-      const { tx, txSignature } = await eth.signZeroExTransaction(
-        newMissions[misisonIndex].order,
-        newMissions[misisonIndex].orderSignature,
-      )
-
-      const { txHash } = await eth.sendExecuteTransaction(tx, txSignature)
-
-      newMissions[misisonIndex].txHash = txHash
-
-      this.setState({ missions: newMissions })
-    } catch (e) {
-      console.error(e)
+    if (newMissions[misisonIndex].active) {
+      try {
+        const { tx, txSignature } = await eth.signZeroExTransaction(
+          newMissions[misisonIndex].order,
+          newMissions[misisonIndex].orderSignature,
+        )
+  
+        const { txHash } = await eth.sendExecuteTransaction(tx, txSignature)
+  
+        newMissions[misisonIndex].txHash = txHash
+  
+        this.setState({ missions: newMissions })
+      } catch (e) {
+        console.error(e)
+      }
     }
   }
 

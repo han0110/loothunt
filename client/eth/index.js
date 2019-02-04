@@ -50,6 +50,22 @@ class ETHWrapper extends ETH {
       throw (e)
     }
   }
+
+  async getFilled(orderHash) {
+    try {
+      const options = {
+        to: CONTRACT_ADDRESSES.EXCHANGE,
+        data: abiUtils.encodeFunctionCall(
+          'filled',
+          [orderHash],
+        ),
+      }
+      const data = await this.call(options)
+      return abiUtils.decodeParameters('filled', data)[0]
+    } catch (e) {
+      throw (e)
+    }
+  }
 }
 
 const eth = new ETHWrapper()
