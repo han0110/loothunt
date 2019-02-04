@@ -114360,13 +114360,13 @@ __webpack_require__.r(__webpack_exports__);
 var _jsxFileName = "/Users/han0110/playground/lootex/archived/loothunt/client/components/Common/Logo.jsx";
 
 
-var Icon = function Icon(_ref) {
+var Logo = function Logo(_ref) {
   var className = _ref.className;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
-    width: "100%",
-    height: "100%",
+    width: "1518",
+    height: "357",
     viewBox: "0 0 1518 357",
-    fill: "#df0078",
+    fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
     className: className,
     __source: {
@@ -114376,7 +114376,7 @@ var Icon = function Icon(_ref) {
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
     d: "M1333.91 159.765L1392.64 131.41L1451.37 159.765L1392.64 244.952L1333.91 159.765Z",
-    stroke: "#333F54",
+    stroke: "#df0078",
     strokeWidth: "11",
     __source: {
       fileName: _jsxFileName,
@@ -114440,7 +114440,7 @@ var Icon = function Icon(_ref) {
   }));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Icon);
+/* harmony default export */ __webpack_exports__["default"] = (Logo);
 
 /***/ }),
 
