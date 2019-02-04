@@ -1,17 +1,17 @@
 import React from 'react'
 
-const Icon = ({ className }) => (
+const Logo = ({ className }) => (
   <svg
-    width="100%"
-    height="100%"
+    width="1518"
+    height="357"
     viewBox="0 0 1518 357"
-    fill="#df0078"
+    fill="none"
     xmlns="http://www.w3.org/2000/svg"
     className={className}
   >
     <path
       d="M1333.91 159.765L1392.64 131.41L1451.37 159.765L1392.64 244.952L1333.91 159.765Z"
-      stroke="#333F54"
+      stroke="#df0078"
       strokeWidth="11"
     />
     <path
@@ -47,4 +47,4 @@ const Icon = ({ className }) => (
   </svg>
 )
 
-export default Icon
+export default Logo
