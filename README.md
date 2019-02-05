@@ -10,11 +10,13 @@ This repository contains 0x extension contract **RequirementFilter**, which acts
 
 - **Requirements Checker**
 
-  Implement a hook to check whether all requirements have been achieved by `signer` before calling `executeTransaction` to exchange
+  Implement a hook to check whether all requirements have been achieved by `signer` before calling `executeTransaction` to exchange.
 
 - **Fake ERC20**
 
   Implement an always-success `transferFrom` interface for no need for taker asset, which is useful when holding an airdrop or hunting!
+
+  Besides, in addition to take advantage of the feature of partial filling of 0x, we require the amount in `transferFrom` to be 1, which makes airdrop issuers more convenient to issue multiple amount of goods in one signing action (no need for transaction).
 
 ## Development
 
