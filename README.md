@@ -2,7 +2,7 @@
 
 ---
 
-[**Wanted**](https://han0110.github.io/loothunt) is a reward tool for airdrop marketing. Providers can offer a reward to anyone who meets the requirements. For users, it’s fun to collect NFTs and even unlock/discover other items. It is as amazing as treasure hunting!
+[**LootHunt**](https://han0110.github.io/loothunt) is a reward tool for airdrop marketing. Providers can offer a reward to anyone who meets the requirements. For users, it’s fun to collect NFTs and even unlock/discover other items. It is as amazing as treasure hunting!
 
 ## Introduction
 
