@@ -5,6 +5,7 @@ import React from 'react'
 import '../styles/style.sass'
 // Utils
 import eth from '../eth'
+import { NULL_ADDRESS } from '../utils/constants'
 
 class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
@@ -20,7 +21,7 @@ class MyApp extends App {
     super(props)
     this.state = {
       enable: false,
-      selectedAddress: '0x00000000000000000000000000000000000000000000000000',
+      selectedAddress: NULL_ADDRESS,
       balance: 0,
     }
   }
