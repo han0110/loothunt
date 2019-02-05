@@ -43701,12 +43701,12 @@ module.exports = function numberToBN(arg) {
 
 /***/ "../node_modules/object-assign/index.js":
 /*!****************************************************************************************************!*\
-  !*** delegated ../node_modules/object-assign/index.js from dll-reference dll_08fa50bc85c03b576e51 ***!
+  !*** delegated ../node_modules/object-assign/index.js from dll-reference dll_85c2abc2c6abae4b59d1 ***!
   \****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_08fa50bc85c03b576e51 */ "dll-reference dll_08fa50bc85c03b576e51"))("../node_modules/object-assign/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_85c2abc2c6abae4b59d1 */ "dll-reference dll_85c2abc2c6abae4b59d1"))("../node_modules/object-assign/index.js");
 
 /***/ }),
 
@@ -47437,12 +47437,12 @@ process.umask = function() { return 0; };
 
 /***/ "../node_modules/prop-types/checkPropTypes.js":
 /*!**********************************************************************************************************!*\
-  !*** delegated ../node_modules/prop-types/checkPropTypes.js from dll-reference dll_08fa50bc85c03b576e51 ***!
+  !*** delegated ../node_modules/prop-types/checkPropTypes.js from dll-reference dll_85c2abc2c6abae4b59d1 ***!
   \**********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_08fa50bc85c03b576e51 */ "dll-reference dll_08fa50bc85c03b576e51"))("../node_modules/prop-types/checkPropTypes.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_85c2abc2c6abae4b59d1 */ "dll-reference dll_85c2abc2c6abae4b59d1"))("../node_modules/prop-types/checkPropTypes.js");
 
 /***/ }),
 
@@ -48050,12 +48050,12 @@ if (true) {
 
 /***/ "../node_modules/prop-types/lib/ReactPropTypesSecret.js":
 /*!********************************************************************************************************************!*\
-  !*** delegated ../node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_08fa50bc85c03b576e51 ***!
+  !*** delegated ../node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_85c2abc2c6abae4b59d1 ***!
   \********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_08fa50bc85c03b576e51 */ "dll-reference dll_08fa50bc85c03b576e51"))("../node_modules/prop-types/lib/ReactPropTypesSecret.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_85c2abc2c6abae4b59d1 */ "dll-reference dll_85c2abc2c6abae4b59d1"))("../node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 /***/ }),
 
@@ -48847,12 +48847,12 @@ module.exports = randomHex;
 
 /***/ "../node_modules/react/index.js":
 /*!********************************************************************************************!*\
-  !*** delegated ../node_modules/react/index.js from dll-reference dll_08fa50bc85c03b576e51 ***!
+  !*** delegated ../node_modules/react/index.js from dll-reference dll_85c2abc2c6abae4b59d1 ***!
   \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_08fa50bc85c03b576e51 */ "dll-reference dll_08fa50bc85c03b576e51"))("../node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_85c2abc2c6abae4b59d1 */ "dll-reference dll_85c2abc2c6abae4b59d1"))("../node_modules/react/index.js");
 
 /***/ }),
 
@@ -110480,12 +110480,12 @@ module.exports = {
 
 /***/ "../node_modules/webpack/buildin/global.js":
 /*!*******************************************************************************************************!*\
-  !*** delegated ../node_modules/webpack/buildin/global.js from dll-reference dll_08fa50bc85c03b576e51 ***!
+  !*** delegated ../node_modules/webpack/buildin/global.js from dll-reference dll_85c2abc2c6abae4b59d1 ***!
   \*******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_08fa50bc85c03b576e51 */ "dll-reference dll_08fa50bc85c03b576e51"))("../node_modules/webpack/buildin/global.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_85c2abc2c6abae4b59d1 */ "dll-reference dll_85c2abc2c6abae4b59d1"))("../node_modules/webpack/buildin/global.js");
 
 /***/ }),
 
@@ -111800,6 +111800,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_style_sass__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/style.sass */ "./styles/style.sass");
 /* harmony import */ var _styles_style_sass__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_style_sass__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _eth__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../eth */ "./eth/index.js");
+/* harmony import */ var _utils_constants__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utils/constants */ "./utils/constants.js");
 
 var _jsxFileName = "/Users/han0110/playground/lootex/archived/loothunt/client/pages/_app.jsx";
 
@@ -111840,6 +111841,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
  // Styles
 
  // Utils
+
 
 
 
@@ -111907,7 +111909,7 @@ function (_App) {
     _this = _possibleConstructorReturn(this, _getPrototypeOf(MyApp).call(this, props));
     _this.state = {
       enable: false,
-      selectedAddress: '0x00000000000000000000000000000000000000000000000000',
+      selectedAddress: _utils_constants__WEBPACK_IMPORTED_MODULE_6__["NULL_ADDRESS"],
       balance: 0
     };
     return _this;
@@ -112001,25 +112003,25 @@ function (_App) {
       return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(next_app__WEBPACK_IMPORTED_MODULE_1__["Container"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 45
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 46
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("title", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 47
         },
         __self: this
       }, "LootHunt")), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Component, _extends({}, initialProps, this.state, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 49
         },
         __self: this
       })));
@@ -112735,14 +112737,14 @@ return { page: module.exports.default }});
 
 /***/ }),
 
-/***/ "dll-reference dll_08fa50bc85c03b576e51":
+/***/ "dll-reference dll_85c2abc2c6abae4b59d1":
 /*!*******************************************!*\
-  !*** external "dll_08fa50bc85c03b576e51" ***!
+  !*** external "dll_85c2abc2c6abae4b59d1" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_08fa50bc85c03b576e51;
+module.exports = dll_85c2abc2c6abae4b59d1;
 
 /***/ })
 

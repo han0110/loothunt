@@ -1,0 +1,160 @@
+@keyframes Wallet___spin___2zzO3 {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+/*
+ * Viewport sized typography with minimum and maximum values
+ *
+ * @author Eduardo Boucas (@eduardoboucas)
+ *
+ * @param {Number}   $responsive  - Viewport-based size
+ * @param {Number}   $min         - Minimum font size (px)
+ * @param {Number}   $max         - Maximum font size (px)
+ *                                  (optional)
+ * @param {Number}   $fallback    - Fallback for viewport-
+ *                                  based units (optional)
+ *
+ * @example scss - 5vw font size (with 50px fallback), 
+ *                 minumum of 35px and maximum of 150px
+ * @include responsive-font(5vw, 35px, 150px, 50px);
+ */
+.Wallet___container___16uIx {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+
+.Wallet___hint___1iyiN {
+  font-size: 1em;
+  margin: .5em;
+  opacity: .5; }
+
+@keyframes Nav___spin___1Ts-Q {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+/*
+ * Viewport sized typography with minimum and maximum values
+ *
+ * @author Eduardo Boucas (@eduardoboucas)
+ *
+ * @param {Number}   $responsive  - Viewport-based size
+ * @param {Number}   $min         - Minimum font size (px)
+ * @param {Number}   $max         - Maximum font size (px)
+ *                                  (optional)
+ * @param {Number}   $fallback    - Fallback for viewport-
+ *                                  based units (optional)
+ *
+ * @example scss - 5vw font size (with 50px fallback), 
+ *                 minumum of 35px and maximum of 150px
+ * @include responsive-font(5vw, 35px, 150px, 50px);
+ */
+.Nav___container___3N4CK {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  padding: 0 1em;
+  z-index: 500;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(57, 70, 95, 0.96);
+  color: #eee; }
+
+.Nav___logo___3J4ct {
+  display: flex;
+  height: 5em;
+  width: 14.34174em;
+  margin: .5em 1.25vw; }
+
+.Nav___items___7OyBh {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center; }
+  .Nav___items___7OyBh .Nav___item___1NXSS {
+    padding: 1em 1.25vw;
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #bbbbbb; }
+    .Nav___items___7OyBh .Nav___item___1NXSS.Nav___wallet___uTUwb {
+      background-color: #333f55;
+      padding: 1em 2.5vw;
+      margin-left: 1.25vw; }
+      .Nav___items___7OyBh .Nav___item___1NXSS.Nav___wallet___uTUwb:hover {
+        background-color: #2a3345; }
+    .Nav___items___7OyBh .Nav___item___1NXSS:hover {
+      color: white; }
+
+.Nav___dummy___13svn {
+  padding: 3em 0; }
+
+@keyframes Layout___spin___1TIIv {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+/*
+ * Viewport sized typography with minimum and maximum values
+ *
+ * @author Eduardo Boucas (@eduardoboucas)
+ *
+ * @param {Number}   $responsive  - Viewport-based size
+ * @param {Number}   $min         - Minimum font size (px)
+ * @param {Number}   $max         - Maximum font size (px)
+ *                                  (optional)
+ * @param {Number}   $fallback    - Fallback for viewport-
+ *                                  based units (optional)
+ *
+ * @example scss - 5vw font size (with 50px fallback), 
+ *                 minumum of 35px and maximum of 150px
+ * @include responsive-font(5vw, 35px, 150px, 50px);
+ */
+.Layout___main-container___2i5LX {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center; }
+
+.Layout___main-container___2i5LX h1, .Layout___main-container___2i5LX h2, .Layout___main-container___2i5LX h3, .Layout___main-container___2i5LX h4, .Layout___main-container___2i5LX h5, .Layout___main-container___2i5LX h6,
+header h1,
+header h2,
+header h3,
+header h4,
+header h5,
+header h6 {
+  padding: .25em 0;
+  margin: .5em 0;
+  display: inline-block; }
+
+.Layout___main-container___2i5LX h1, .Layout___main-container___2i5LX h2,
+header h1,
+header h2 {
+  font-family: Montserrat, serif, Lato, sans-serif;
+  font-weight: 700;
+  line-height: 1.12; }
+
+.Layout___main-container___2i5LX h1,
+header h1 {
+  font-size: 4em;
+  max-width: 8em; }
+
+.Layout___main-container___2i5LX h2,
+header h2 {
+  font-size: 2em; }
+
+.Layout___main-container___2i5LX h4,
+header h4 {
+  font-size: 1.1em; }
+

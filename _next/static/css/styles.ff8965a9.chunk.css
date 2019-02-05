@@ -1,0 +1,430 @@
+@import url(//fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Montserrat:400,400i,800,800i);
+p {
+  -ms-word-wrap: break-word;
+  word-break: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  -webkit-hyphenate-before: 2;
+  -webkit-hyphenate-after: 3;
+  hyphenate-lines: 3;
+  -webkit-font-feature-settings: "liga", "dlig";
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -ms-font-feature-settings: "liga", "dlig";
+  -o-font-feature-settings: "liga", "dlig";
+  font-feature-settings: "liga", "dlig"; }
+  p br {
+    line-height: 2.2; }
+
+@keyframes style___spin___29DzM {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+/*
+ * Viewport sized typography with minimum and maximum values
+ *
+ * @author Eduardo Boucas (@eduardoboucas)
+ *
+ * @param {Number}   $responsive  - Viewport-based size
+ * @param {Number}   $min         - Minimum font size (px)
+ * @param {Number}   $max         - Maximum font size (px)
+ *                                  (optional)
+ * @param {Number}   $fallback    - Fallback for viewport-
+ *                                  based units (optional)
+ *
+ * @example scss - 5vw font size (with 50px fallback), 
+ *                 minumum of 35px and maximum of 150px
+ * @include responsive-font(5vw, 35px, 150px, 50px);
+ */
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto; }
+
+body {
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: .05em;
+  box-sizing: border-box;
+  background-color: #3d4b65;
+  color: #444;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+dl {
+  margin: 0; }
+
+dd, dt {
+  padding: 0;
+  margin: 0; }
+
+a, a:visited {
+  text-decoration: none;
+  color: inherit; }
+  a:link, a:visited:link {
+    -webkit-tap-highlight-color: transparent; }
+
+input, textarea {
+  border: none;
+  outline: none; }
+
+#__next {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start; }
+
+@keyframes CreateSteps___spin___2MdH2 {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+/*
+ * Viewport sized typography with minimum and maximum values
+ *
+ * @author Eduardo Boucas (@eduardoboucas)
+ *
+ * @param {Number}   $responsive  - Viewport-based size
+ * @param {Number}   $min         - Minimum font size (px)
+ * @param {Number}   $max         - Maximum font size (px)
+ *                                  (optional)
+ * @param {Number}   $fallback    - Fallback for viewport-
+ *                                  based units (optional)
+ *
+ * @example scss - 5vw font size (with 50px fallback), 
+ *                 minumum of 35px and maximum of 150px
+ * @include responsive-font(5vw, 35px, 150px, 50px);
+ */
+.CreateSteps___container___2Aw7i {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 2em 20vw; }
+
+.CreateSteps___line___2cV4e {
+  position: absolute;
+  width: calc(100% - 50vw);
+  height: 0.25em;
+  margin: auto;
+  top: -2.5em;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ea29a9; }
+
+.CreateSteps___step___2JUc- {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .CreateSteps___step___2JUc- > h2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 3em;
+    height: 3em;
+    margin: 0;
+    border-radius: 50%;
+    border: 0.25em solid #3d4b65;
+    color: #3d4b65;
+    background-color: #ea29a9;
+    z-index: 1; }
+  .CreateSteps___step___2JUc- > h5 {
+    color: #2a3345; }
+    .CreateSteps___step___2JUc- > h5[data-active="true"] {
+      color: #ea29a9; }
+
+@keyframes SetupReward___spin___2y_kA {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+/*
+ * Viewport sized typography with minimum and maximum values
+ *
+ * @author Eduardo Boucas (@eduardoboucas)
+ *
+ * @param {Number}   $responsive  - Viewport-based size
+ * @param {Number}   $min         - Minimum font size (px)
+ * @param {Number}   $max         - Maximum font size (px)
+ *                                  (optional)
+ * @param {Number}   $fallback    - Fallback for viewport-
+ *                                  based units (optional)
+ *
+ * @example scss - 5vw font size (with 50px fallback), 
+ *                 minumum of 35px and maximum of 150px
+ * @include responsive-font(5vw, 35px, 150px, 50px);
+ */
+.SetupReward___container___33vvw {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 2em 20vw;
+  margin-top: 2em; }
+
+.SetupReward___gift___2qNkG {
+  width: 300px;
+  height: 300px;
+  background-color: #e1e1e1;
+  border-radius: 0.5em; }
+
+.SetupReward___form___3z3YB {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  flex: 1;
+  margin-left: 3em; }
+
+.SetupReward___tokens___3zkcC {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  max-height: 300px;
+  padding: 1em 2em;
+  color: #4055ae;
+  background-color: #e1e1e1;
+  border-radius: 0.5em;
+  overflow: scroll;
+  cursor: pointer;
+  transition: 0.1s ease-in-out; }
+  .SetupReward___tokens___3zkcC:hover {
+    background-color: #d5d5d5; }
+  .SetupReward___tokens___3zkcC::after {
+    position: absolute;
+    top: 1em;
+    right: 2em;
+    content: '';
+    display: block;
+    width: 0.5em;
+    height: 0.5em;
+    border-top: solid 0.1em #4055ae;
+    border-right: solid 0.1em #4055ae;
+    transform: rotate(135deg); }
+
+@keyframes MissionData___spin___2d1k8 {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+/*
+ * Viewport sized typography with minimum and maximum values
+ *
+ * @author Eduardo Boucas (@eduardoboucas)
+ *
+ * @param {Number}   $responsive  - Viewport-based size
+ * @param {Number}   $min         - Minimum font size (px)
+ * @param {Number}   $max         - Maximum font size (px)
+ *                                  (optional)
+ * @param {Number}   $fallback    - Fallback for viewport-
+ *                                  based units (optional)
+ *
+ * @example scss - 5vw font size (with 50px fallback), 
+ *                 minumum of 35px and maximum of 150px
+ * @include responsive-font(5vw, 35px, 150px, 50px);
+ */
+.MissionData___container___1aipx {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 1em;
+  background-color: white;
+  width: 7em;
+  height: 9em; }
+
+.MissionData___status___3nZaU {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  width: 1em;
+  height: 1em; }
+
+.MissionData___spinner___7CjsW {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  animation: MissionData___spin___2d1k8 1s linear infinite;
+  border: solid 2px;
+  border-color: #4055ae #4055ae transparent transparent; }
+
+.MissionData___checkmark___YkQCr {
+  display: inline-block; }
+  .MissionData___checkmark___YkQCr:after {
+    content: '';
+    display: block;
+    width: 0.6em;
+    height: 0.9em;
+    margin-top: -0.25em;
+    border: solid #4055ae;
+    border-width: 0 0.2em 0.2em 0;
+    transform: rotate(45deg); }
+
+.MissionData___crossmark___2OoIW {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+  .MissionData___crossmark___2OoIW:before, .MissionData___crossmark___2OoIW:after {
+    content: '';
+    width: 0.2em;
+    height: 1em;
+    background: #ea29a9; }
+  .MissionData___crossmark___2OoIW:before {
+    margin-right: -1.5px;
+    transform: rotate(45deg); }
+  .MissionData___crossmark___2OoIW:after {
+    margin-left: -1.5px;
+    transform: rotate(135deg); }
+
+.MissionData___image___15fBI {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 6em;
+  height: 6em;
+  flex-shrink: 0; }
+  .MissionData___image___15fBI > img {
+    width: 100%;
+    height: 100%; }
+    .MissionData___image___15fBI > img[data-erc20] {
+      width: 70%;
+      height: 70%; }
+
+.MissionData___content___32zQ1 {
+  margin: 0;
+  font-weight: bolder;
+  color: #4055ae; }
+
+@keyframes Missions___spin___1qSTf {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+/*
+ * Viewport sized typography with minimum and maximum values
+ *
+ * @author Eduardo Boucas (@eduardoboucas)
+ *
+ * @param {Number}   $responsive  - Viewport-based size
+ * @param {Number}   $min         - Minimum font size (px)
+ * @param {Number}   $max         - Maximum font size (px)
+ *                                  (optional)
+ * @param {Number}   $fallback    - Fallback for viewport-
+ *                                  based units (optional)
+ *
+ * @example scss - 5vw font size (with 50px fallback), 
+ *                 minumum of 35px and maximum of 150px
+ * @include responsive-font(5vw, 35px, 150px, 50px);
+ */
+.Missions___container___3IOgH {
+  padding: 2em 20vw; }
+
+.Missions___title___2qGzw {
+  color: #eee; }
+
+.Missions___mission___1nLmF {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  padding: 1em; }
+
+.Missions___requirements___2JEvw {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  overflow: scroll; }
+  .Missions___requirements___2JEvw > div {
+    margin-left: 1em;
+    flex-shrink: 0; }
+
+.Missions___divider___1i9vq {
+  margin: 0 2em 0 auto;
+  padding-left: 2em;
+  border-right: dashed 1px #eee; }
+
+.Missions___reward___1rGdO {
+  margin-right: 2em;
+  flex-shrink: 0; }
+
+.Missions___get___x_Urk {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 5em;
+  height: 3em;
+  padding: .5em;
+  margin: auto 0;
+  font-weight: bold;
+  color: #eee;
+  background-color: #ea29a9;
+  border-radius: 0.5em;
+  border: none;
+  outline: none;
+  transition: .24s ease-out;
+  cursor: not-allowed; }
+  .Missions___get___x_Urk > h4, .Missions___get___x_Urk p {
+    margin: 0; }
+  .Missions___get___x_Urk > p {
+    font-size: 0.75em;
+    margin-bottom: 0.2em;
+    color: #c8c8c8; }
+  .Missions___get___x_Urk[data-active="true"] {
+    cursor: pointer; }
+    .Missions___get___x_Urk[data-active="true"]:hover {
+      transform: scale(1.1); }
+
+.Missions___viewTx___9M-wA {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 5em;
+  flex-shrink: 0;
+  height: 3em;
+  padding: .5em;
+  margin: auto 0;
+  font-weight: bold;
+  background-color: #5d71c4;
+  border-radius: 0.5em;
+  transition: .24s ease-out;
+  cursor: pointer; }
+  .Missions___viewTx___9M-wA:hover {
+    transform: scale(1.1); }
+  .Missions___viewTx___9M-wA > h5 {
+    color: #eee; }
+
