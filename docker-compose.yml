@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  hunt-frontend:
+    container_name: hunt.lootex.dev
+    image: hunt.lootex.dev:latest
+    build: ./frontend
+    restart: always
+    environment:
+      - VIRTUAL_PORT=${FRONTEND_VIRTUAL_PORT:-3000}
+      - VIRTUAL_HOST=${FRONTEND_VIRTUAL_HOST:-hunt.lootex.dev}
+      - LETSENCRYPT_HOST=${FRONTEND_VIRTUAL_HOST:-hunt.lootex.dev}
+      - LETSENCRYPT_EMAIL=${LETSENCRYPT_EMAIL:-example@gmail.com}
+    networks:
+      - services
+
+networks:
+  services:
+    external: true

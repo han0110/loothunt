@@ -2,9 +2,8 @@
 .DS_Store
 .env
 node_modules
-tests/generated-artifacts
+generated-artifacts
 flattens
-package-lock.json
 yarn.lock
 *.log
 .next
