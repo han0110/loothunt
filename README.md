@@ -1,8 +1,8 @@
-<img src="https://raw.githubusercontent.com/han0110/loothunt/master/client/assets/images/loothunt.png" width="300px" >
+<img src="https://raw.githubusercontent.com/han0110/loothunt/master/frontend/client/assets/images/loothunt.png" width="300px" >
 
 ---
 
-[**LootHunt**](https://han0110.github.io/loothunt) is a reward tool for airdrop marketing. Providers can offer a reward to anyone who meets the requirements. For users, it’s fun to collect NFTs and even unlock/discover other items. It is as amazing as treasure hunting!
+[**LootHunt**](https://hunt.lootex.dev) is a reward tool for airdrop marketing. Providers can offer a reward to anyone who meets the requirements. For users, it’s fun to collect NFTs and even unlock/discover other items. It is as amazing as treasure hunting!
 
 ## Introduction
 
